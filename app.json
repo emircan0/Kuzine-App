@@ -1,0 +1,67 @@
+{
+  "expo": {
+    "name": "Kuzine-App",
+    "slug": "kuzine-app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.yourcompany.kuzineapp",
+      "infoPlist": {
+        "CFBundleURLTypes": [
+          {
+            "CFBundleURLSchemes": [
+              "yourapp"
+            ]
+          }
+        ],
+        "NSPhotoLibraryUsageDescription": "Uygulama fotoğraflarınıza erişim isteyecek.",
+        "NSCameraUsageDescription": "Uygulama kameranızı kullanmak isteyecek."
+      },
+      "googleServicesFile": "./GoogleService-Info.plist"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.yourcompany.kuzineapp",
+      "googleServicesFile": "./google-services.json",
+      "permissions": [
+        "CAMERA",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png",
+      "redirectUri": "https://auth.expo.io/@your-username/kuzine-app",
+      "client_id": "194049098476-1m0e8lv27udobtpq8tcanb7ucf6tcr92.apps.googleusercontent.com",
+      "project_id": "kuzine-app-436518",
+      "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+      "token_uri": "https://oauth2.googleapis.com/token",
+      "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+      "client_secret": "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"
+    },
+    "scheme": "yourapp",
+    "plugins": [
+      "@react-native-google-signin/google-signin",
+      "expo-font"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "d1646a0a-17cf-47bd-a925-4ca0fae0ea2e"
+      }
+    }
+  }
+}
